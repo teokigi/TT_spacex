@@ -1,23 +1,28 @@
+div{
+    border:solid;
+    border-width:1px;
+}
 .App {
   background-color: white;
 }
 
+
 .App-header {
-  left:0;
-  right:0;
   height:50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border:solid;
-  border-style:
   }
 
 .App-body{
-    left:0;
-    right:0;
-    height:80%;
-    border:solid;
+  left:0;
+  right:0;
+  height:500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border:solid;
 }
 
 

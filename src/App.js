@@ -14,9 +14,12 @@ function App() {
         
       </header>
       <body className="App-body">
-        <p>
-            Space X Body
-        </p>
+        <div>
+            image left
+        </div>
+        <div>
+            component right
+        </div>
       </body>
     </div>
   );
