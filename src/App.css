@@ -3,18 +3,19 @@
 }
 
 .App-header {
-  width:100%;
+  left:0;
+  right:0;
   height:50px;
   display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
   border:solid;
+  border-style:
   }
 
 .App-body{
-    width:100%;
+    left:0;
+    right:0;
     height:80%;
     border:solid;
 }

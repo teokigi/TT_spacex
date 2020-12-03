@@ -5,10 +5,12 @@ function App() {
     <div className="App">
         Space X App
       <header className="App-header">
-        
-        <p>
-            space X Header
-        </p>
+        <div>
+            left image
+        </div>
+        <div>
+            right button
+        </div>
         
       </header>
       <body className="App-body">
