@@ -13,7 +13,7 @@ function App() {
             <div>
                 left image
             </div>
-            <div class="App-header-right-pane-refresh" onClick={refreshPage}>
+            <div className="App-header-right-pane-refresh" onClick={refreshPage}>
                 Reload Data
             </div>
         
@@ -22,7 +22,7 @@ function App() {
             <div>
                 image left
             </div>
-            <div class="App-body-right-pane">
+            <div className="App-body-right-pane">
                 <LaunchComponent />
             </div>
         </div>

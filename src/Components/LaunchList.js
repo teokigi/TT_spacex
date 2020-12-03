@@ -8,7 +8,7 @@ const LaunchList = (props) =>{
     const allLaunches = props.launchData.map((launch, index)=>{
         return(
             <div id="launchlist" key={index}>
-                {launch.name},{launch.date_utc.slice(0,4)}
+                {launch.name},{launch.date}
             </div>
         )
     })
