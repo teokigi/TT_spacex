@@ -6,7 +6,9 @@ const LaunchList = (props) =>{
     }
 
     return(
-        <p> launch list</p>
+        <p>
+        LaunchList
+        </p>
     )
 }
 

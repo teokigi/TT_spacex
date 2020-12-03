@@ -21,7 +21,7 @@ class LaunchContainer extends Component{
     render(){
         return(
         <p> launches
-        <LaunchList/>
+        <LaunchList launchData={this.state.launches}/>
         </p>
         )
     }
