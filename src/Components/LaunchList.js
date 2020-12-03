@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LaunchList = (props) =>{
-    if (props.length ===0){
+    if (props ==null){
         return ("loading/no launches...")
     }
 

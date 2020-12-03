@@ -6,9 +6,7 @@ class LaunchContainer extends Component{
     constructor(props){
         super(props);
 
-        this.state = {
-            launches:null
-        }
+        this.state=null;
     }
 
     componentDidMount(){
@@ -19,11 +17,17 @@ class LaunchContainer extends Component{
     }
 
     render(){
-        return(
-        <p> launches
-        <LaunchList launchData={this.state.launches}/>
-        </p>
-        )
+        if(this.state != null ){
+            return(
+                <p> launches
+                <LaunchList launchData={this.state.launches}/>
+                </p>
+            
+            )
+        }else{
+            return(
+                <p>loading launch data...</p>)
+        }
     }
 }
 export default LaunchContainer;
