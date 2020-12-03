@@ -19,9 +19,9 @@ class LaunchContainer extends Component{
     render(){
         if(this.state != null ){
             return(
-                <p> launches
+                <div> launches
                 <LaunchList launchData={this.state.launches}/>
-                </p>
+                </div>
             
             )
         }else{
