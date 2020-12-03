@@ -11,17 +11,19 @@ class LaunchContainer extends Component{
         }
     }
 
-    componentDidMount(){
-        const request = new Request();
+    // componentDidMount(){
+    //     const request = new Request();
 
-        request.get()
-        .then(data =>this.setState({launches:data}))
-    }
+    //     request.get()
+    //     .then(data =>this.setState({launches:data}))
+    // }
 
-    return(){
+    render(){
+        return(
         <p> launches
         <LaunchList/>
         </p>
+        )
     }
 }
 export default LaunchContainer;

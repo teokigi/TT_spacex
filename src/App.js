@@ -1,5 +1,5 @@
 import './App.css';
-import './Components/Launches';
+import LaunchComponent from './Components/Launches';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         </div>
         <div>
             component right
+            <LaunchComponent />
         </div>
       </body>
     </div>
