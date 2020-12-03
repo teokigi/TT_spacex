@@ -23,6 +23,7 @@ div{
   flex-direction: row;
   justify-content: space-around;
   border:solid;
+  overflow-y:scroll;
 }
 
 
