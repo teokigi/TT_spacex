@@ -5,9 +5,17 @@ const LaunchList = (props) =>{
         return ("loading/no launches...")
     }
 
+    const allLaunches = props.launchData.map((launch, index)=>{
+        return(
+            <div id="launchlist">
+                {launch.name}
+            </div>
+        )
+    })
+
     return(
         <p>
-        LaunchList
+        {allLaunches}
         </p>
     )
 }
