@@ -23,7 +23,18 @@ div{
   flex-direction: row;
   justify-content: space-around;
   border:solid;
-  
+}
+
+.App-header-right-pane-refresh{
+    background-color:#2a6cc2;
+    color:white;
+    border-radius:40px;
+    padding:10px;
 }
 
 
+.App-body-right-pane{
+    width:50%;
+    height:100%;
+    overflow-y:scroll;
+}

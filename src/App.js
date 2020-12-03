@@ -2,6 +2,10 @@ import './App.css';
 import LaunchComponent from './Components/Launches';
 
 function App() {
+
+    function refreshPage(){
+        window.location.reload(false);
+    }
   return (
     <div className="App">
         Space X App
@@ -9,8 +13,8 @@ function App() {
             <div>
                 left image
             </div>
-            <div>
-                right button
+            <div class="App-header-right-pane-refresh" onClick={refreshPage}>
+                Reload Data
             </div>
         
         </header>
@@ -18,8 +22,7 @@ function App() {
             <div>
                 image left
             </div>
-            <div id="App-body-list">
-                component right
+            <div class="App-body-right-pane">
                 <LaunchComponent />
             </div>
         </div>
