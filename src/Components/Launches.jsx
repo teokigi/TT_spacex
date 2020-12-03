@@ -9,9 +9,8 @@ class LaunchContainer extends Component{
         this.state=null;
     }
 
-    filterLaunchYear(year){
-        this.setState({filteredLaunches:this.state.launches.filter(launch=>launch.date_utc.slice(0,4)==year)})
-    }
+ 
+
     componentDidMount(){
         const request = new Request();
 
@@ -23,7 +22,6 @@ class LaunchContainer extends Component{
         if(this.state != null ){
             return(
                 <div>
-                    <button>Filter By Year</button>
                     <LaunchList launchData={this.state.launches}/>
                 </div>
             
