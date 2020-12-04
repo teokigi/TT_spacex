@@ -42,7 +42,8 @@ const LaunchList = (props) =>{
     return(
         <div>
                     <select className="action-menu" onChange={id=>setselYear({year:id.target.value})} defaultValue="default">
-                        <option value="default"> Filter By year</option>
+                        <option default disabled value="default"> Filter By year</option>
+                        <option value="default"> no filter</option>
                     {yearOptions}
                     </select>
                     <button className="action-menu" onClick={()=>sortLaunchData()}>Sort {sortText.text} <img src={sort_ico}/></button>
