@@ -9,8 +9,9 @@ const LaunchList = (props) =>{
 
     function sortLaunchData(){
         setsortedLaunch({launches:sortedLaunch.launches.reverse()})
-        sortText.text === "Ascending"?setsortText({text:"Ascending"}):setsortText({text:"Descending"});
+        sortText.text === "Ascending"?setsortText({text:"Descending"}):setsortText({text:"Ascending"});
     }
+
     if (props ==null){
         return ("loading/no launches...")
     }
