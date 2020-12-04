@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import sort_ico from '../assets/icon/sort.png';
 
 const LaunchList = (props) =>{
     
-    const [selYear,setselYear] = useState({year:null})
+    const [selYear,setselYear] = useState({year:"default"})
     const [sortedLaunch,setsortedLaunch] = useState({launches:props.launchData})
+    const [sortText,setsortText] = useState({text:"Ascending"})
 
     function sortLaunchData(){
         setsortedLaunch({launches:sortedLaunch.launches.reverse()})
-        
+        sortText.text === "Ascending"? setsortText({text:"Descending"}):setsortText({text:"Ascending"});
     }
     if (props ==null){
         return ("loading/no launches...")
@@ -16,7 +18,7 @@ const LaunchList = (props) =>{
     const filteredLaunches = sortedLaunch.launches.filter(launch=>launch.date_utc.slice(0,4)===selYear.year)
         .map((launch, index)=>{
         return(
-            <div className="launchlist" key={index}>
+            <div className="launch-list" key={index}>
                 {launch.name},{launch.date_utc.slice(0,10)}
             </div>
             )
@@ -24,7 +26,7 @@ const LaunchList = (props) =>{
 
     const allLaunches = sortedLaunch.launches.map((launch, index)=>{
         return(
-            <div className="launchlist" key={index}>
+            <div className="launch-list" key={index}>
                 {launch.name},{launch.date_utc.slice(0,10)}
             </div>
         )
@@ -39,13 +41,14 @@ const LaunchList = (props) =>{
         
     return(
         <div>
-                    <select onChange={id=>setselYear({year:id.target.value})} defaultValue="default">
+                    <select className="action-menu" onChange={id=>setselYear({year:id.target.value})} defaultValue="default">
                         <option value="default"> Filter By year</option>
                     {yearOptions}
                     </select>
-                    <button onClick={()=>sortLaunchData()}>Sort by Date</button>
+                    <button className="action-menu" onClick={()=>sortLaunchData()}>Sort {sortText.text} <img src={sort_ico}/></button>
                     
-            {selYear.year===(null||'default')?allLaunches:filteredLaunches}
+                    
+            {selYear.year==='default'?allLaunches:filteredLaunches}
         </div>
     )
     
