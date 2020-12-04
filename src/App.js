@@ -1,6 +1,7 @@
 import './App.css';
 import LaunchComponent from './Components/Launches';
 import logo from './assets/spacex-logo.png'
+import image001 from './assets/img/launch-home.png';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         </header>
         <div className="App-body">
             <div>
-                image left
+                <img id="spacex_image" src={image001} />
             </div>
             <div className="App-body-right-pane">
                 <LaunchComponent />
