@@ -1,5 +1,6 @@
 import './App.css';
 import LaunchComponent from './Components/Launches';
+import logo from './assets/spacex-logo.png'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         Space X App
         <header className="App-header">
             <div>
-                left image
+                <img id="spacex_logo"src={logo} />
             </div>
             <div className="App-header-right-pane-refresh" onClick={refreshPage}>
                 Reload Data
