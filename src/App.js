@@ -12,7 +12,7 @@ function App() {
     <div className="App">
         <header className="App-header">
             <div>
-                <span><img id="spacex_logo"src={logo} alt="spacex logo" /> Launches</span>
+                <span><img id="spacex_logo"src={logo} alt="spacex logo" /> LAUNCHES</span>
             </div>
             <div className="App-header-right-pane-refresh" onClick={refreshPage}>
                 Reload Data <img id="refresh_ico" src={refresh_ico} alt="refresh icon"/>

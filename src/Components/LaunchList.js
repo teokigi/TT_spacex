@@ -23,7 +23,7 @@ const LaunchList = (props) =>{
                 <div>#{launch.flight_number}</div><div>{launch.name}</div><div>{launch.date_utc.slice(0,10)}</div>
             </div>
             )
-        })
+    })
 
     const allLaunches = sortedLaunch.launches.map((launch, index)=>{
         return(
@@ -35,8 +35,9 @@ const LaunchList = (props) =>{
 
 
     const yearOptions = props.launchData.map(launch=>launch.date_utc.slice(0,4))
-        .filter((year, index, array)=>array.indexOf(year)===index)
-        .map((year, index)=>(<option value={year} key={index}>{year}</option>))
+                        .filter((year, index, array)=>array.indexOf(year)===index)
+                        .map((year, index)=>(<option value={year} key={index}>{year}</option>)
+    )
     
 
         
