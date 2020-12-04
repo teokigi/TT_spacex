@@ -19,7 +19,7 @@ const LaunchList = (props) =>{
         .map((launch, index)=>{
         return(
             <div className="launch-list" key={index}>
-                <div>#{launch.flight_number}</div><div>{launch.name}</div><div>{new Date(launch.date_utc.slice(0,10))}</div>
+                <div>#{launch.flight_number}</div><div>{launch.name}</div><div>{launch.date_utc.slice(0,10)}</div>
             </div>
             )
         })
