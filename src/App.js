@@ -10,10 +10,9 @@ function App() {
     }
   return (
     <div className="App">
-        Space X App
         <header className="App-header">
             <div>
-                <img id="spacex_logo"src={logo} />
+                <span><img id="spacex_logo"src={logo} /> Launches</span>
             </div>
             <div className="App-header-right-pane-refresh" onClick={refreshPage}>
                 Reload Data

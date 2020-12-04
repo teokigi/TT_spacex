@@ -1,7 +1,3 @@
-div{
-    border:solid;
-    border-width:1px;
-}
 .App {
   background-color: white;
 }
@@ -12,8 +8,7 @@ div{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border:solid;
-  }
+}
 
 .App-body{
   left:0;
@@ -22,7 +17,7 @@ div{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border:solid;
+  
 }
 
 .App-header-right-pane-refresh{
@@ -37,6 +32,9 @@ div{
     width:50%;
     height:100%;
     overflow-y:scroll;
+    border:solid;
+    padding:5px;
+    border-radius:5px;
 }
 
 #spacex_logo{
