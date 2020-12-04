@@ -12,16 +12,16 @@ function App() {
     <div className="App">
         <header className="App-header">
             <div>
-                <span><img id="spacex_logo"src={logo} /> Launches</span>
+                <span><img id="spacex_logo"src={logo} alt="spacex logo" /> Launches</span>
             </div>
             <div className="App-header-right-pane-refresh" onClick={refreshPage}>
-                Reload Data <img id="refresh_ico" src={refresh_ico} />
+                Reload Data <img id="refresh_ico" src={refresh_ico} alt="refresh icon"/>
             </div>
         
         </header>
         <div className="App-body">
             <div>
-                <img id="spacex_image" src={image001} />
+                <img id="spacex_image" src={image001} alt="spacex"/>
             </div>
             <div className="App-body-right-pane">
                 <LaunchComponent />
