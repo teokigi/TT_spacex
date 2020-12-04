@@ -19,7 +19,7 @@ const LaunchList = (props) =>{
         .map((launch, index)=>{
         return(
             <div className="launch-list" key={index}>
-                {launch.name},{launch.date_utc.slice(0,10)}
+                <div>#{launch.flight_number}</div><div>{launch.name}</div><div>{new Date(launch.date_utc.slice(0,10))}</div>
             </div>
             )
         })
@@ -27,7 +27,7 @@ const LaunchList = (props) =>{
     const allLaunches = sortedLaunch.launches.map((launch, index)=>{
         return(
             <div className="launch-list" key={index}>
-                {launch.name},{launch.date_utc.slice(0,10)}
+                <div>#{launch.flight_number}</div><div>{launch.name}</div><div>{launch.date_utc.slice(0,10)}</div>
             </div>
         )
     })
@@ -46,7 +46,7 @@ const LaunchList = (props) =>{
                         <option value="default"> no filter</option>
                     {yearOptions}
                     </select>
-                    <button className="action-menu" onClick={()=>sortLaunchData()}>Sort {sortText.text} <img src={sort_ico}/></button>
+                    <button className="action-menu" onClick={()=>sortLaunchData()}>Sort {sortText.text} <img src={sort_ico} alt="sort"/></button>
                     
                     
             {selYear.year==='default'?allLaunches:filteredLaunches}
